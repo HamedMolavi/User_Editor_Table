@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: lightseagreen;
+    padding: 20px;
+}
+
+table {
+    text-align: center;
+    font-family: sans-serif;
+    border-collapse: collapse;
+    font-size: smaller;
+    border: 2px solid black;
+    background-color: white;
+    margin: auto;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+th:hover {
+    cursor: pointer;
+}
+
+th:active {
+    color: blue;
+    background-color: white;
+}
+
+td {
+    padding: 5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(128, 128, 128, 0.726);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    width: 50%;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 2px;
+    box-shadow: -4px 5px 10px 0.1px grey;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.close {
+    height: fit-content;
+    width: fit-content;
+    color: #aaa;
+    background-color: #fefefe;
+    font-size: 30px;
+    font-family: cursive;
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+.close:hover{
+    color: black;
+    cursor: pointer;
+}
+.close:active{
+    font-weight: bolder;
+}
+
+.modal-content-keys{
+    width: fit-content;
+    text-align: end;
+    font-family: cursive;
+}
+
+.modal-content-data{
+    width: fit-content;
+    text-align: start;
+    font-family: cursive;
+}
+
+input{
+    margin: 5px 0;
+    border: 1px solid black;
+    width: 150px;
+    display: block;
+}
+
+.btn{
+    width: 100px;
+    height: 23px;
+    background-color: lightgrey;
+    color: black;
+    border: 2px solid lightgrey;
+    border-radius: 2px;
+    z-index: 100;
+    display: none;
+}
+.btn:hover{
+    border-color: grey;
+}
+.btn:active{
+    background-color: grey;
+    border-color: grey;
+    color: white;
+}
+#btnDelete{
+    color: red !important;
+}
+
+#btnDelete:active{
+    color: blue !important;
+}
+
+.modify{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.add{
+    background-color: coral !important;
+    cursor: pointer;
+    font-weight: bold;
+}
+.add:active{
+    color: white;
+}
+
+.save{
+    width: 300px;
+    height: 50px;
+    margin: 10px auto;
+    background-color: lightgreen;
+    color: black;
+    border: 2px solid lightgreen;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: large;
+    z-index: 100;
+    display: block;
+}
+.save:hover{
+    border-color: darkgreen;
+}
+.save:active{
+    background-color: darkgreen;
+    border-color: darkgreen;
+    font-weight: bold;
+    color: white;
+}
+.imgAvatar{
+    width: 128px;
+    height: 128px;
+}
